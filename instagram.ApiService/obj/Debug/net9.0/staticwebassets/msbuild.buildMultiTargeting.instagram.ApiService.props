@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/instagram.ApiService.props" />
+</Project>

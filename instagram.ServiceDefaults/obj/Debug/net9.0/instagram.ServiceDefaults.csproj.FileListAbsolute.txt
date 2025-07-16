@@ -1,0 +1,12 @@
+/Users/thienantran/instagram/instagram.ServiceDefaults/bin/Debug/net9.0/instagram.ServiceDefaults.deps.json
+/Users/thienantran/instagram/instagram.ServiceDefaults/bin/Debug/net9.0/instagram.ServiceDefaults.dll
+/Users/thienantran/instagram/instagram.ServiceDefaults/bin/Debug/net9.0/instagram.ServiceDefaults.pdb
+/Users/thienantran/instagram/instagram.ServiceDefaults/obj/Debug/net9.0/instagram.ServiceDefaults.csproj.AssemblyReference.cache
+/Users/thienantran/instagram/instagram.ServiceDefaults/obj/Debug/net9.0/instagram.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thienantran/instagram/instagram.ServiceDefaults/obj/Debug/net9.0/instagram.ServiceDefaults.AssemblyInfoInputs.cache
+/Users/thienantran/instagram/instagram.ServiceDefaults/obj/Debug/net9.0/instagram.ServiceDefaults.AssemblyInfo.cs
+/Users/thienantran/instagram/instagram.ServiceDefaults/obj/Debug/net9.0/instagram.ServiceDefaults.csproj.CoreCompileInputs.cache
+/Users/thienantran/instagram/instagram.ServiceDefaults/obj/Debug/net9.0/instagram.ServiceDefaults.dll
+/Users/thienantran/instagram/instagram.ServiceDefaults/obj/Debug/net9.0/refint/instagram.ServiceDefaults.dll
+/Users/thienantran/instagram/instagram.ServiceDefaults/obj/Debug/net9.0/instagram.ServiceDefaults.pdb
+/Users/thienantran/instagram/instagram.ServiceDefaults/obj/Debug/net9.0/ref/instagram.ServiceDefaults.dll

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "p9RxFc62pGBtgB14lix8EPj9cqBGNQ4V0dHMveRFgxM=",
+  "Source": "instagram.ApiService",
+  "BasePath": "_content/instagram.ApiService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

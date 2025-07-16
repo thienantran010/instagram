@@ -1,0 +1,14 @@
+/Users/thienantran/instagram/instagram.Data/obj/Debug/net9.0/instagram.Data.csproj.AssemblyReference.cache
+/Users/thienantran/instagram/instagram.Data/obj/Debug/net9.0/instagram.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thienantran/instagram/instagram.Data/obj/Debug/net9.0/instagram.Data.AssemblyInfoInputs.cache
+/Users/thienantran/instagram/instagram.Data/obj/Debug/net9.0/instagram.Data.AssemblyInfo.cs
+/Users/thienantran/instagram/instagram.Data/obj/Debug/net9.0/instagram.Data.csproj.CoreCompileInputs.cache
+/Users/thienantran/instagram/instagram.Data/bin/Debug/net9.0/instagram.Data.deps.json
+/Users/thienantran/instagram/instagram.Data/bin/Debug/net9.0/instagram.Data.runtimeconfig.json
+/Users/thienantran/instagram/instagram.Data/bin/Debug/net9.0/instagram.Data.dll
+/Users/thienantran/instagram/instagram.Data/bin/Debug/net9.0/instagram.Data.pdb
+/Users/thienantran/instagram/instagram.Data/obj/Debug/net9.0/instagram.Data.dll
+/Users/thienantran/instagram/instagram.Data/obj/Debug/net9.0/refint/instagram.Data.dll
+/Users/thienantran/instagram/instagram.Data/obj/Debug/net9.0/instagram.Data.pdb
+/Users/thienantran/instagram/instagram.Data/obj/Debug/net9.0/instagram.Data.genruntimeconfig.cache
+/Users/thienantran/instagram/instagram.Data/obj/Debug/net9.0/ref/instagram.Data.dll
