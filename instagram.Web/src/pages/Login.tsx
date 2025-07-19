@@ -9,49 +9,40 @@ import {
   Heading,
   useToast,
 } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 import api from "@/api";
 import { useAuth } from "../AuthContext";
-import { getUser, login } from "@/utils";
+import { login } from "@/utils";
 
-const Auth = () => {
-  const [isLogin, setIsLogin] = useState(true);
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const toast = useToast();
   const { setUser } = useAuth();
+  const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     try {
-      const data = {
-        email,
-        password,
-      };
-
-      const _ = isLogin ? await login(data) : await api.register.post(data);
-
+      await login({ email, password });
       const user = await api.user.get();
+
       if (user) {
         setUser(user);
         toast({
-          title: isLogin
-            ? "Logged in successfully!"
-            : "Signed up successfully!",
+          title: "Logged in successfully!",
           status: "success",
           duration: 3000,
           isClosable: true,
         });
+        navigate("/"); // redirect to home or dashboard
       } else {
-        throw Error(
-          "Unable to find user when logging in or failed to register"
-        );
+        throw Error("Unable to find user after login.");
       }
-
-      // Set user context or redirect here
     } catch (err) {
       toast({
-        title: `${isLogin ? "Login" : "Signup"} error`,
+        title: "Login error",
         description: (err as Error).message,
         status: "error",
         duration: 3000,
@@ -64,7 +55,7 @@ const Auth = () => {
     <form onSubmit={handleSubmit}>
       <Stack spacing={6}>
         <Heading size="lg" textAlign="center">
-          {isLogin ? "Log In to Your Account" : "Create a New Account"}
+          Log In to Your Account
         </Heading>
 
         <FormControl id="email" isRequired>
@@ -86,33 +77,22 @@ const Auth = () => {
         </FormControl>
 
         <Button colorScheme="blue" type="submit">
-          {isLogin ? "Log In" : "Sign Up"}
+          Log In
         </Button>
 
         <Text fontSize="sm" textAlign="center">
-          {isLogin ? (
-            <>
-              Don’t have an account?{" "}
-              <Button
-                variant="link"
-                size="sm"
-                onClick={() => setIsLogin(false)}
-              >
-                Sign up
-              </Button>
-            </>
-          ) : (
-            <>
-              Already have an account?{" "}
-              <Button variant="link" size="sm" onClick={() => setIsLogin(true)}>
-                Log in
-              </Button>
-            </>
-          )}
+          Don’t have an account?{" "}
+          <Button
+            variant="link"
+            size="sm"
+            onClick={() => navigate("/register")}
+          >
+            Register
+          </Button>
         </Text>
       </Stack>
     </form>
   );
 };
 
-export default Auth;
+export default Login;

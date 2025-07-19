@@ -8,10 +8,9 @@ import { createApiClient } from "./api/apiClient.ts";
 const authProvider = new AnonymousAuthenticationProvider();
 
 const customFetch: typeof fetch = (input, init = {}) => {
-  console.log(init);
   return fetch(input, {
     ...init,
-    credentials: "include", // <== THIS is the important part
+    credentials: "include",
   });
 };
 const httpClient = new HttpClient(customFetch);
